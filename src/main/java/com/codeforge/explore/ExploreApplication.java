@@ -11,7 +11,11 @@ public class ExploreApplication {
 	public static void main(String[] args) {
 
 		SpringApplication.run(ExploreApplication.class, args);
-		log.info("Application is running...");
+		log.info("INFO: Application is running...");
+		log.warn("WARN: Application is running...");
+		log.error("ERROR: Application is running...");
+		log.debug("DEBUG: Application is running...");
+		log.trace("TRACE: Application is running...");
 	}
 
 }

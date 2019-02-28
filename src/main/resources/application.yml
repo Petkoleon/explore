@@ -1,0 +1,15 @@
+logging:
+  file: logs/appLog.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %clr(%-5level) [%thread] %logger : %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger : %msg%n"
+  level:
+    org.springframework.web: ERROR
+    org.hibernate: ERROR
+    com.codeforge: TRACE
+
+spring:
+  # to enable color-coded logging output
+  output:
+    ansi:
+      enabled: ALWAYS
